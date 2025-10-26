@@ -3,7 +3,7 @@ import { Game } from "@/data/games";
 import { formatUSD } from "@/lib/utils";
 
 export default function ProductCard({ game }: { game: Game }) {
-  const best = game.denominations.find((d) => d.best); // only if explicitly set
+  const best = game.denominations.find((d) => d.best);
 
   return (
     <div className="card group hover:border-yellow-400 transition-all hover:shadow-yellow-400/10 hover:shadow-lg">
@@ -13,12 +13,13 @@ export default function ProductCard({ game }: { game: Game }) {
           alt={game.name}
           className="w-full h-full object-contain p-6 transition-transform duration-300 group-hover:scale-105"
         />
-        {/* Show Popular badge only if this specific game has 'best' set */}
-        {best ? (
+
+        {/* Show 'Popular' only if game.isPopular === true */}
+        {game.isPopular && (
           <div className="absolute top-3 right-3 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full shadow">
             Popular
           </div>
-        ) : null}
+        )}
       </div>
 
       <div className="mt-4 space-y-2">
@@ -31,10 +32,7 @@ export default function ProductCard({ game }: { game: Game }) {
           </div>
         )}
 
-        <Link
-          href={`/games/${game.slug}`}
-          className="btn btn-primary mt-4 w-full"
-        >
+        <Link href={`/games/${game.slug}`} className="btn btn-primary mt-4 w-full">
           View Options
         </Link>
       </div>
