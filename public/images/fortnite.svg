@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)" rx="24" ry="24"/>
+  <g fill="#ffffff" font-family="Verdana, Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="230" font-size="56" font-weight="700">FORTNITE</text>
+    <text x="400" y="280" font-size="20" opacity="0.8">Demo Image · Replace with official art for production</text>
+  </g>
+</svg>

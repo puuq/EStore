@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #facc15;
+}
+
+body {
+  @apply bg-gray-950 text-gray-100 font-sans;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-medium transition active:scale-[.98];
+}
+
+.btn-primary {
+  @apply bg-yellow-400 text-black hover:bg-yellow-300;
+}
+
+.btn-outline {
+  @apply border border-gray-600 text-gray-200 hover:bg-gray-800;
+}
+
+.card {
+  @apply rounded-2xl border border-gray-800 p-4 shadow-sm bg-gray-900;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full bg-gray-800 px-2 py-1 text-xs font-medium text-gray-300;
+}
+
+.input {
+  @apply w-full rounded-xl border border-gray-700 bg-gray-900 px-3 py-2 outline-none text-gray-100 focus:border-yellow-400;
+}

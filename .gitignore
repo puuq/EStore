@@ -1,0 +1,38 @@
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+coverage/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+
+# Turbo / vercel
+.turbo
+.vercel
+
+# Locks (optional if you switch managers)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
